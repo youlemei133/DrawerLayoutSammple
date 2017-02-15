@@ -1,5 +1,6 @@
 package com.hudawei.drawerlayoutsample;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -64,13 +65,16 @@ public class MainActivity extends AppCompatActivity {
         // 3.LOCK_MODE_UNLOCKED，不做任何限制
         // 4.LOCK_MODE_UNDEFINED，和LOCK_MODE_UNLOCKED一样
         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNDEFINED);
+
+
         //设置侧滑栏边缘的阴影图片，不起作用
         drawerLayout.setDrawerShadow(R.drawable.drawer_shadow,Gravity.START);
         //给指定的侧滑栏设置标题，不会显示
         drawerLayout.setDrawerTitle(Gravity.START,"侧滑栏标题");
         //设置侧滑栏打开时，蒙板的颜色。不起作用
         drawerLayout.setScrimColor(0x0000FFFF);
-        drawerLayout.setStatusBarBackground(0x0000FF00);
+        // 设置状态栏颜色，不起作用
+        drawerLayout.setStatusBarBackground(new ColorDrawable(0x00FF00));
     }
 
 
