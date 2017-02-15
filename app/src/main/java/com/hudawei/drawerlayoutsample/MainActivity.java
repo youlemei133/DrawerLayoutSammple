@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         //设置侧滑栏打开时，蒙板的颜色。不起作用
         drawerLayout.setScrimColor(0x0000FFFF);
         // 设置状态栏颜色，不起作用
-        drawerLayout.setStatusBarBackground(new ColorDrawable(0x00FF00));
+        drawerLayout.setStatusBarBackground(R.color.colorAccent);
     }
 
 
